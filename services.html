@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tentrite Premed Agency Services - Comprehensive Pre-Medical Education Programs including Anatomy, Microbiology, and Biochemistry courses.">
+    <meta name="keywords" content="premed services, medical education, anatomy courses, microbiology training, biochemistry tutoring">
+    <meta name="author" content="Tentrite Premed Agency">
+    <meta name="theme-color" content="#5B4BFF">
+    <title>Our Services - Tentrite Premed Agency</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        :root {
+            --primary: #5B4BFF;
+            --secondary: #EEF0FF;
+            --accent: #00E5A8;
+        }
+        
+        body {
+            background-color: #0f0f0f;
+            color: #ffffff;
+        }
+        
+        .text-primary {
+            color: #5B4BFF;
+        }
+        
+        .bg-primary {
+            background-color: #5B4BFF;
+        }
+        
+        .text-accent {
+            color: #00E5A8;
+        }
+        
+        .bg-accent {
+            background-color: #00E5A8;
+        }
+        
+        .btn-primary {
+            background-color: #5B4BFF;
+            color: white;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #5B4BFF;
+            border: 2px solid #5B4BFF;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #5B4BFF;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease-out;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 50px rgba(91, 75, 255, 0.2);
+        }
+        
+        .feature-icon {
+            width: 3rem;
+            height: 3rem;
+            background: linear-gradient(135deg, #5B4BFF 0%, #00E5A8 100%);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #5B4BFF 0%, #00E5A8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(91, 75, 255, 0.1) 0%, rgba(0, 229, 168, 0.05) 100%);
+        }
+        
+        .section-gradient {
+            background: linear-gradient(180deg, rgba(91, 75, 255, 0.05) 0%, rgba(0, 229, 168, 0.02) 100%);
+        }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="scroll-smooth">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-md border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-emerald-400 flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">TP</span>
+                </div>
+                <span class="text-xl font-bold text-white hidden sm:inline">Tentrite</span>
+            </div>
+            
+            <a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-300 text-lg font-medium">
+                ← Back
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-[400px] flex items-center justify-center py-24 md:py-32 px-8 md:px-16 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+            <div class="absolute top-40 right-10 w-72 h-72 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-6 animate-fade-in-up">
+                Our <span class="gradient-text">Services</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style="animation-delay: 0.1s;">
+                Comprehensive educational programs designed to help you master pre-medical sciences and achieve your medical school goals
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 md:py-32 px-8 md:px-16 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                <!-- Service 1: Anatomy Mastery -->
+                <div class="card-hover bg-gray-800 bg-opacity-50 border border-gray-700 rounded-2xl p-8 md:p-10">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-skeleton text-lg"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Anatomy Mastery</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Comprehensive anatomy curriculum with interactive 3D models, detailed system breakdowns, and clinical correlations. Master the human body structure with visual learning tools and comprehensive coverage of all major systems.
+                    </p>
+                </div>
+
+                <!-- Service 2: Microbiology Excellence -->
+                <div class="card-hover bg-gray-800 bg-opacity-50 border border-gray-700 rounded-2xl p-8 md:p-10">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-virus text-lg"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Microbiology Excellence</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        In-depth microbiology training covering bacteria, viruses, fungi, and parasites. Learn pathogenic mechanisms, immune responses, and clinical applications with real-world case studies and laboratory-based learning approaches.
+                    </p>
+                </div>
+
+                <!-- Service 3: Biochemistry Fundamentals -->
+                <div class="card-hover bg-gray-800 bg-opacity-50 border border-gray-700 rounded-2xl p-8 md:p-10">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-flask text-lg"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Biochemistry Fundamentals</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Master metabolic pathways, protein synthesis, and enzymatic reactions. Our biochemistry program breaks down complex molecular processes into understandable concepts with visual diagrams and interactive problem-solving exercises.
+                    </p>
+                </div>
+
+                <!-- Service 4: Personalized Tutoring -->
+                <div class="card-hover bg-gray-800 bg-opacity-50 border border-gray-700 rounded-2xl p-8 md:p-10">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-chalkboard-user text-lg"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Personalized Tutoring</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        One-on-one expert tutoring sessions tailored to your learning style and pace. Our experienced instructors provide customized guidance, answer complex questions, and help you overcome challenging topics with proven strategies.
+                    </p>
+                </div>
+
+                <!-- Service 5: Exam Preparation -->
+                <div class="card-hover bg-gray-800 bg-opacity-50 border border-gray-700 rounded-2xl p-8 md:p-10">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-clipboard-check text-lg"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Exam Preparation</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Comprehensive exam prep programs with practice tests, review materials, and test-taking strategies. Build confidence through realistic practice exams and detailed performance analytics to identify areas for improvement.
+                    </p>
+                </div>
+
+                <!-- Service 6: Study Resources & Materials -->
+                <div class="card-hover bg-gray-800 bg-opacity-50 border border-gray-700 rounded-2xl p-8 md:p-10">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-book text-lg"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Study Resources & Materials</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Access our extensive library of study guides, flashcards, lecture notes, and reference materials. Available 24/7 for on-demand learning, with downloadable resources and mobile-friendly formats for studying anywhere.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-gradient py-20 md:py-32 px-8 md:px-16">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+                Ready to Transform Your <span class="gradient-text">Pre-Medical Journey</span>?
+            </h2>
+            
+            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Get in touch with our team to learn more about our services and how we can help you achieve your medical school dreams.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="btn-primary text-lg">
+                    Contact Us
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+                <a href="index.html" class="btn-secondary text-lg">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-16 px-8 md:px-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-emerald-400 flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">TP</span>
+                        </div>
+                        <span class="text-lg font-bold text-white">Tentrite</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Empowering the next generation of medical professionals through comprehensive pre-medical education.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Study Guides</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Connect With Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-primary w-5"></i>
+                            <span class="text-gray-400 text-sm">info@tentrite.agency</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone text-primary w-5"></i>
+                            <span class="text-gray-400 text-sm">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-map-marker-alt text-primary w-5"></i>
+                            <span class="text-gray-400 text-sm">Online Platform</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p class="text-gray-500 text-sm">
+                        &copy; 2024 Tentrite Premed Agency. All rights reserved.
+                    </p>
+                    
+                    <div class="flex gap-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-facebook text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-linkedin text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
