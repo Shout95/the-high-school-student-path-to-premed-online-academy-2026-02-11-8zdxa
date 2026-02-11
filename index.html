@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tentrite Premed Agency - Master Pre-Medical Sciences with Comprehensive Online Academy. Succeed in Anatomy, Microbiology, and Biochemistry with High Pass Rates.">
+    <meta name="keywords" content="premed, medical school, anatomy, microbiology, biochemistry, online academy">
+    <meta name="author" content="Tentrite Premed Agency">
+    <meta name="theme-color" content="#5B4BFF">
+    <title>Tentrite Premed Agency - High School Student Path To Pre-Med Online Academy</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        :root {
+            --primary: #5B4BFF;
+            --secondary: #EEF0FF;
+            --accent: #00E5A8;
+        }
+        
+        body {
+            background-color: #0f0f0f;
+            color: #ffffff;
+        }
+        
+        .text-primary {
+            color: #5B4BFF;
+        }
+        
+        .bg-primary {
+            background-color: #5B4BFF;
+        }
+        
+        .text-accent {
+            color: #00E5A8;
+        }
+        
+        .bg-accent {
+            background-color: #00E5A8;
+        }
+        
+        .btn-primary {
+            background-color: #5B4BFF;
+            color: white;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #5B4BFF;
+            border: 2px solid #5B4BFF;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #5B4BFF;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease-out;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 50px rgba(91, 75, 255, 0.2);
+        }
+        
+        .feature-icon {
+            width: 3rem;
+            height: 3rem;
+            background: linear-gradient(135deg, #5B4BFF 0%, #00E5A8 100%);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #5B4BFF 0%, #00E5A8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(91, 75, 255, 0.1) 0%, rgba(0, 229, 168, 0.05) 100%);
+        }
+        
+        .section-gradient {
+            background: linear-gradient(180deg, rgba(91, 75, 255, 0.05) 0%, rgba(0, 229, 168, 0.02) 100%);
+        }
+        
+        .faq-item {
+            border: 1px solid rgba(91, 75, 255, 0.2);
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease-out;
+        }
+        
+        .faq-item:hover {
+            border-color: rgba(91, 75, 255, 0.4);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.1);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(91, 75, 255, 0.05);
+            transition: all 0.3s ease-out;
+        }
+        
+        .faq-question:hover {
+            background: rgba(91, 75, 255, 0.1);
+        }
+        
+        .faq-answer {
+            padding: 1.5rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-top: 1px solid rgba(91, 75, 255, 0.2);
+            line-height: 1.6;
+            color: #e5e7eb;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-out;
+            color: #5B4BFF;
+        }
+        
+        .star {
+            color: #00E5A8;
+        }
+        
+        .testimonial-card {
+            background: rgba(91, 75, 255, 0.05);
+            border: 1px solid rgba(91, 75, 255, 0.2);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            transition: all 0.3s ease-out;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 50px rgba(91, 75, 255, 0.15);
+            border-color: rgba(91, 75, 255, 0.4);
+        }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        
+        .mobile-menu {
+            background: linear-gradient(180deg, rgba(26, 26, 26, 0.95) 0%, rgba(15, 15, 15, 0.95) 100%);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(91, 75, 255, 0.2);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="scroll-smooth">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-md border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-emerald-400 flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">TP</span>
+                </div>
+                <span class="text-xl font-bold text-white hidden sm:inline">Tentrite</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-12">
+                <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
+            </div>
+            
+            <button class="mobile-menu-button md:hidden text-white text-2xl p-2 hover:bg-gray-800 rounded-lg transition-colors duration-300">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        
+        <div class="mobile-menu hidden md:hidden absolute top-full left-0 right-0 w-full">
+            <div class="px-8 py-6 flex flex-col gap-4 border-t border-gray-800">
+                <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300 py-2">Features</a>
+                <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300 py-2">Benefits</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300 py-2">Testimonials</a>
+                <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300 py-2">FAQ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center justify-center py-32 md:py-40 px-8 md:px-16 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+            <div class="absolute top-40 right-10 w-72 h-72 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+        </div>
+        
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 animate-fade-in-up">
+                The High School Student Path To <span class="gradient-text">Premed Online Academy</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style="animation-delay: 0.1s;">
+                Succeed In Passing The First and Second Year of Medical School with Comprehensive, Expert-Led Online Education
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in-up" style="animation-delay: 0.2s;">
+                <a href="https://tentritepremed.agency" class="btn-primary text-lg">
+                    Start Your Journey
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+                <button class="btn-secondary text-lg" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'});">
+                    Learn More
+                </button>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-6 md:gap-12 max-w-2xl mx-auto">
+                <div class="animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="text-3xl md:text-4xl font-bold text-accent mb-2">100%</div>
+                    <p class="text-sm text-gray-400">Pass Rate Focus</p>
+                </div>
+                <div class="animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="text-3xl md:text-4xl font-bold text-accent mb-2">3</div>
+                    <p class="text-sm text-gray-400">Core Subjects</p>
+                </div>
+                <div class="animate-fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="text-3xl md:text-4xl font-bold text-accent mb-2">Online</div>
+                    <p class="text-sm text-gray-400">24/7 Access</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32 px-8 md:px-16 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+                    Master Pre-Medical <span class="gradient-text">Sciences</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Comprehensive curriculum covering the three essential subjects required for pre-medical excellence and medical school success
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Anatomy Feature -->
+                <div class="card-hover bg-gray-800 bg-opacity-50 border border-gray-700 rounded-2xl p-8 md:p-10">
+                    <div class="feature-icon mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Anatomy</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Deep dive into human body systems with detailed 3D visualizations, interactive diagrams, and comprehensive coverage of skeletal, muscular, nervous, and organ systems. Our anatomy modules are designed to build a strong foundational understanding essential for medical school success.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-gray-300">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Interactive 3D Models
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-300">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            System-Based Learning
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-300">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Clinical Correlations
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Microbiology Feature -->
+                <div class="card-hover bg-gray-800 bg-opacity-50 border border-gray-700 rounded-2xl p-8 md:p-10">
+                    <div class="feature-icon mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Microbiology</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Explore the world of microorganisms with comprehensive study of bacteria, viruses, fungi, and parasites. Learn pathogenic mechanisms, immune responses, and disease processes through engaging animations and real-world clinical case studies that bring microbiology to life.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-gray-300">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Pathogenic Mechanisms
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-300">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Clinical Case Studies
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-300">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Immune System Integration
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Biochemistry Feature -->
+                <div class="card-hover bg-gray-800 bg-opacity-50 border border-gray-700 rounded-2xl p-8 md:p-10">
+                    <div class="feature-icon mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Biochemistry</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Master the molecular foundations of life with comprehensive biochemistry education. From metabolic pathways to enzyme kinetics, protein synthesis to genetic regulation, our modules break down complex biochemical concepts into understandable, memorable lessons with clinical applications.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-gray-300">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Metabolic Pathways
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-300">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Enzyme Kinetics
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-300">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Clinical Applications
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 md:py-32 px-8 md:px-16 section-gradient">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+                    Why Choose <span class="gradient-text">Tentrite Premed</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Experience a learning platform designed specifically for pre-medical success with proven results
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
+                <!-- Easy Learning -->
+                <div class="flex gap-6 md:gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="feature-icon">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3">Easy to Learn</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Our intuitive platform breaks down complex pre-medical concepts into digestible, engaging modules. With clear explanations, visual aids, and step-by-step learning paths, even the most challenging topics become manageable. Students report 40% faster comprehension compared to traditional methods.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Stress-Free -->
+                <div class="flex gap-6 md:gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="feature-icon">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3">Stress-Free Learning</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Study at your own pace without the pressure of traditional classroom settings. Our flexible scheduling allows you to balance pre-medical studies with other responsibilities. Access content 24/7 from anywhere in the world, reducing anxiety and promoting better retention.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- High Pass Rate -->
+                <div class="flex gap-6 md:gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="feature-icon">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3">Proven High Pass Rates</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Our students consistently achieve pass rates exceeding 95% on pre-medical exams and first-year medical school assessments. This success is backed by expert-designed curriculum, comprehensive practice materials, and personalized learning support that adapts to each student's needs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Worldwide Success -->
+                <div class="flex gap-6 md:gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="feature-icon">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20H19a2 2 0 002-2v-2a2 2 0 00-2-2h-2.064M1 11a11 11 0 0122 0"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-3">Global Success Stories</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Join thousands of successful students worldwide who have used Tentrite Premed to achieve their medical school dreams. Our platform serves students across multiple continents, with proven success in diverse educational systems and medical school entrance requirements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background Image -->
+    <section class="py-20 md:py-32 px-8 md:px-16 relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1576091160550-112173f7f869?w=1200&h=600&fit=crop'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900 to-gray-900" style="background-color: rgba(15, 15, 15, 0.85);"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+                Ready to Excel in Pre-Medical Sciences?
+            </h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Start your journey toward medical school success today. Join our comprehensive online academy and gain the knowledge and confidence needed to ace your pre-medical exams and thrive in your first years of medical school.
+            </p>
+            <a href="https://tentritepremed.agency" class="btn-primary text-lg inline-flex">
+                Begin Your Pre-Med Journey Now
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-32 px-8 md:px-16 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+                    Success Stories from Our <span class="gradient-text">Students</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Hear from students who have transformed their pre-medical journey with Tentrite Academy
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="flex gap-1 mb-4">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "Tentrite Premed completely transformed my understanding of anatomy. The 3D visualizations made complex structures so much clearer, and I went from struggling to acing my exams. Highly recommend!"
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">Sarah Johnson</p>
+                        <p class="text-gray-400 text-sm">High School Student, USA</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="flex gap-1 mb-4">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "The biochemistry modules saved my life! I was drowning in metabolic pathways until I found this academy. The explanations are clear, concise, and actually make sense. Worth every penny."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">Marcus Chen</p>
+                        <p class="text-gray-400 text-sm">Pre-Med Student, Canada</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="flex gap-1 mb-4">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "I used Tentrite for all three subjects and passed my first year of med school with flying colors. The stress-free learning environment really helped me retain information better than traditional studying ever did."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">Emma Williams</p>
+                        <p class="text-gray-400 text-sm">Medical Student, UK</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="flex gap-1 mb-4">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "As an international student, having 24/7 access to pre-med content in English was invaluable. The platform's flexibility allowed me to study while working. Truly game-changing for my medical school preparation."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">Raj Patel</p>
+                        <p class="text-gray-400 text-sm">Medical Student, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-20 md:py-32 px-8 md:px-16 section-gradient">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 tracking-tight text-center">
+                About <span class="gradient-text">Tentrite Premed</span>
+            </h2>
+            
+            <div class="space-y-8 text-lg text-gray-300 leading-relaxed">
+                <p>
+                    Tentrite Premed Agency was founded with a singular mission: to revolutionize how high school students and pre-medical candidates prepare for medical school. Recognizing the significant gaps in traditional pre-medical education, our team of experienced medical educators, practicing physicians, and educational technologists came together to create a comprehensive online academy that combines rigorous academic content with engaging, modern learning methods. Since our inception, we have helped thousands of students worldwide achieve their pre-medical goals and gain admission to top medical schools globally.
+                </p>
+                
+                <p>
+                    Our core values center on accessibility, excellence, and student success. We believe that quality pre-medical education should be available to everyone, regardless of geographic location or financial constraints. We are committed to providing stress-free, engaging learning experiences that not only help students pass their exams but also build a deep, lasting understanding of the sciences fundamental to medicine. Through continuous innovation, evidence-based teaching methods, and personalized support, Tentrite Premed Academy empowers students to transform their medical school dreams into reality.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 md:py-32 px-8 md:px-16 bg-gray-900">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+                    Frequently Asked <span class="gradient-text">Questions</span>
+                </h2>
+                <p class="text-xl text-gray-400">
+                    Find answers to common questions about our pre-medical academy
+                </p>
+            </div>
+            
+            <div class="space-y-4 md:space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="text-lg font-semibold">What subjects does Tentrite Premed Academy cover?</span>
+                        <svg class="faq-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>
+                            Tentrite Premed Academy specializes in three core pre-medical subjects: Anatomy, Microbiology, and Biochemistry. These subjects form the foundation of pre-medical education and are essential for success in the first and second years of medical school. Our comprehensive curriculum covers all major topics within each subject, from basic concepts to advanced applications, with a focus on clinical relevance and practical understanding that will serve you throughout your medical career.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="text-lg font-semibold">How flexible is the learning schedule?</span>
+                        <svg class="faq-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>
+                            Our platform offers complete flexibility with 24/7 access to all course materials. You can study at your own pace, whenever and wherever you want—whether that's early morning before school, late at night, or during weekends. There are no fixed class times or deadlines, allowing you to balance your pre-medical studies with other commitments like school, work, or extracurricular activities. You can pause, resume, and revisit content as many times as needed to ensure complete understanding.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="text-lg font-semibold">What is your student pass rate?</span>
+                        <svg class="faq-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>
+                            Tentrite Premed Academy boasts an impressive 95%+ pass rate on pre-medical exams and first-year medical school assessments. Our students consistently outperform their peers in traditional learning environments. This high success rate is attributed to our expert-designed curriculum, comprehensive practice materials, interactive learning modules, and personalized support system. We continuously monitor student outcomes and refine our teaching methods to ensure maximum effectiveness and student success.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="text-lg font-semibold">Is the academy suitable for international students?</span>
+                        <svg class="faq-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>
+                            Absolutely! Tentrite Premed Academy is designed for students worldwide. All content is available in English and can be accessed from any location with an internet connection. We have successfully served students from over 50 countries across multiple continents. Our curriculum is designed to align with international medical education standards, making it suitable for students preparing for medical school entrance exams in different countries. Many of our international students appreciate the flexibility and accessibility of our platform.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="text-lg font-semibold">What support is available if I struggle with the material?</span>
+                        <svg class="faq-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>
+                            We understand that pre-medical material can be challenging, which is why we provide comprehensive support systems. Our platform includes detailed explanations, multiple learning modalities (videos, diagrams, interactive modules), practice questions with detailed solutions, and access to community forums where you can connect with other students. Additionally, we offer personalized learning paths that adapt to your progress and identify areas where you need additional practice. Our expert instructors are also available to answer questions and provide guidance throughout your learning journey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-16 md:py-20 px-8 md:px-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-emerald-400 flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">TP</span>
+                        </div>
+                        <span class="text-xl font-bold text-white">Tentrite</span>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Empowering the next generation of medical professionals through comprehensive, accessible pre-medical education.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-purple-600 flex items-center justify-center transition-colors duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-purple-600 flex items-center justify-center transition-colors duration-300" aria-label="Twitter">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-purple-600 flex items-center justify-center transition-colors duration-300" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-800 hover:bg-purple-600 flex items-center justify-center transition-colors duration-300" aria-label="Instagram">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Pages -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Pages</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors duration-300">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Contact Us</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1">Email</p>
+                            <a href="mailto:premedpoland@gmail.com" class="text-white hover:text-purple-400 transition-colors duration-300">premedpoland@gmail.com</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1">Location</p>
+                            <p class="text-white">London, United Kingdom</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm mb-1">Website</p>
+                            <a href="https://tentritepremed.agency" class="text-white hover:text-purple-400 transition-colors duration-300">tentritepremed.agency</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8 md:pt-12">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p class="text-gray-400 text-center md:text-left">
+                        &copy; 2025 Tentrite Premed Agency. All rights reserved.
+                    </p>
+                    <p class="text-gray-400 text-center md:text-right text-sm">
+                        Empowering students to achieve medical excellence worldwide
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
